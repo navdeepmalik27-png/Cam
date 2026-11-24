@@ -1,0 +1,64 @@
+###############################################################################################################################
+# UltraM8 CamX & Qualcomm CHI Override Settings (Integrated into OptiCore OnePlus 13 v58 Qualcomm CHI)
+# Source: UltraM8s-CamXoverrides.zip (camx_user + common/install.sh) + Qualcomm CHI 80-88500-4
+###############################################################################################################################
+
+# Core HAL & Focus Breathing / FOVC Overrides
+fovcEnable=0
+enableInternalHALPixelStreamConfig=FALSE
+maxHalRequests=8
+enableThermalMitigation=FALSE
+disableSpeckleDetection=TRUE
+
+# Maximum Spectra IFE Clock & CamNOC Bandwidth Unlock
+ifeClockFrequencyMHz=0xffffffff
+ifeCamnocBandwidthMBytes=10640
+ifeExternalBandwidthMBytes=10640
+overrideForceFSCapable=TRUE
+overrideMaxImageBufferCountRealTime=-1
+overrideMaxImageBufferCountNonRealTime=-1
+
+# Staggered HDR (sHDR 3-Exposure) & iHDR Snapshot Pipeline
+selectIHDRUsecase=1
+enableIHDRSnapshot=1
+setHDRMode=1
+inSensorSHDRMode=TRUE
+IsSHDRThreeExpMode=1
+
+# Full-Size Quad-Bayer (QCFA) Remosaic & RAW Stream Unlock
+exposeFullSizeForQCFA=TRUE
+maxRAWSizes=3
+perFrameSensorMode=TRUE
+enableSensorRemosaic=1
+enableRawHDR=1
+enableResolutionUpscale=1
+
+# Hybrid Joint Auto-Focus (HJAF) & AI / Per-Request Sync
+enableHJAF=TRUE
+enableAFB=1
+enableAI=1
+enablePerRequestSync=TRUE
+enableNativeHEIF=TRUE
+
+# CHI EEPROM White Balance Reference Calibration (from camx_user)
+# rGain=1.700643  gGain=1.000000  bGain=2.054097  colorTemp=4100K
+overrideForceSensorMode=-1
+overrideUsecaseId=-1
+overrideGPUNode=1
+enableMFNR=1
+enableSWMFMerge=1
+numFramesMFNR=5
+; === OnePlus 13 Sony LYT-808 / LYT-600 2x2 OCL All-Pixel PDAF & CamX HJAF Upgrade ===
+enablePDAF=TRUE
+pdafLibName=pdlibsony.so
+afAlgoType=HJAF_OCL_2X2_OMNI
+ocl2x2PhaseDetectEnable=1
+ocl2x2HorizontalVerticalPdRatio=1.0
+pdafConfidenceThreshold=180
+pdafDefocusFilterTemporalWeight=0.82
+cafTriggerSensitivity=0.88
+cafStableFrameCount=2
+touchAfRoiDivisor=12
+centerAfRoiDivisor=8
+aiboostSrModel=QuickSRNetLarge.tflite
+aiboostSecondaryModel=double.tflite

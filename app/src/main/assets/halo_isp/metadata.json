@@ -1,0 +1,56 @@
+{
+    "model_id": "detr_resnet101",
+    "model_name": "DETR-ResNet101",
+    "source_drive_file_id": "10fEvwMBAibgetW0uNjCiKehqovpfbqmd",
+    "source_archive": "detr_resnet101-tflite-float.zip",
+    "runtime": "tflite",
+    "precision": "float_and_htp_fp16_hybrid",
+    "tool_versions": {
+        "qairt": "2.50.0.260828221209"
+    },
+    "model_files": {
+        "detr_resnet101.tflite": {
+            "inputs": {
+                "image": {
+                    "shape": [
+                        1,
+                        480,
+                        480,
+                        3
+                    ],
+                    "dtype": "float32",
+                    "io_type": "image",
+                    "value_range": [
+                        0.0,
+                        1.0
+                    ]
+                }
+            },
+            "outputs": {
+                "boxes": {
+                    "shape": [
+                        1,
+                        100,
+                        4
+                    ],
+                    "dtype": "float32"
+                },
+                "scores": {
+                    "shape": [
+                        1,
+                        100
+                    ],
+                    "dtype": "float32"
+                },
+                "class_idx": {
+                    "shape": [
+                        1,
+                        100
+                    ],
+                    "dtype": "int32"
+                }
+            }
+        }
+    },
+    "use_case": "Object Detection & AI Subject-Tracking Autofocus"
+}

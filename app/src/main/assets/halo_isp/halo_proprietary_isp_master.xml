@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HaloX9uS26uIspConfig soc="SM8750_Snapdragon8Elite_HexagonV79" version="2.70.0-v56-DETR-ResNet101">
+    <LiteRTQualcommNPU soc="SM8750" arch="v79" libs="libQnnSystem.so,libQnnHtpV79Stub.so,lib_x9u_s26u_isp_1.so" model="detr_resnet101.tflite" runtime="tflite_litert_htp_v79" hvx_threads="4"/>
+    <IQModule name="CamX::ISPIQModuleType::DETR_RESNET101_AI_AF_AND_TELE_ISP">
+        <sharpness_gain>1.08</sharpness_gain>
+        <color_saturation>1.05</color_saturation>
+        <contrast_gain>1.11</contrast_gain>
+        <chroma_denoise_gain>58.0</chroma_denoise_gain>
+    </IQModule>
+</HaloX9uS26uIspConfig>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OptiCoreMasterIspConfig soc="SM8750_Sun_PA3Q_OptiCore_X9S26U" version="2.70.0-X9U-S26U-SD8E-Pro1-v45" profiles="HALO X9U + S26U ISP | S26 ULTRA PROVISUAL | X9U LUMO MASTER">
+    <ProVisualEngine version="S26_Ultra_SM8750_Sun_PA3Q_FixedButtons_Zoom_TapAF_OIS_ZeroHaze">
+        <sharpness_gain>0.92</sharpness_gain>
+        <color_saturation>1.07</color_saturation>
+        <contrast_gain>1.12</contrast_gain>
+        <chroma_denoise_gain>48.0</chroma_denoise_gain>
+    </ProVisualEngine>
+</OptiCoreMasterIspConfig>

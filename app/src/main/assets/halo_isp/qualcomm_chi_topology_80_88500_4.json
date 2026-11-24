@@ -1,0 +1,48 @@
+{
+  "document_ref": "Qualcomm Linux Camera Guide (80-88500-4) - Topic 126_CHI + UltraM8s-CamXoverrides",
+  "version": "v58_UltraM8_CamXOverrides_QualcommCHI_ZeroLines",
+  "target_soc": "Qualcomm Snapdragon 8 Elite (SM8750 / Spectra 480-class Dual-VFE/IFE + BPS + IPE)",
+  "ultram8_camx_overrides": {
+    "source_archive": "UltraM8s-CamXoverrides.zip",
+    "files_integrated": [
+      "assets/halo_isp/camxoverridesettings.txt",
+      "assets/halo_isp/camx_user",
+      "assets/halo_isp/ultram8_install_reference.sh"
+    ],
+    "active_flags": {
+      "fovcEnable": 0,
+      "enableInternalHALPixelStreamConfig": false,
+      "maxHalRequests": 8,
+      "enableThermalMitigation": false,
+      "disableSpeckleDetection": true,
+      "ifeClockFrequencyMHz": "0xffffffff",
+      "ifeCamnocBandwidthMBytes": 10640,
+      "ifeExternalBandwidthMBytes": 10640,
+      "overrideForceFSCapable": true,
+      "overrideMaxImageBufferCountRealTime": -1,
+      "overrideMaxImageBufferCountNonRealTime": -1,
+      "selectIHDRUsecase": 1,
+      "enableIHDRSnapshot": 1,
+      "setHDRMode": 1,
+      "inSensorSHDRMode": true,
+      "IsSHDRThreeExpMode": 1,
+      "exposeFullSizeForQCFA": true,
+      "maxRAWSizes": 3,
+      "perFrameSensorMode": true,
+      "enableHJAF": true,
+      "enableAFB": 1,
+      "enableAI": 1,
+      "enableRawHDR": 1,
+      "enableSensorRemosaic": 1,
+      "enableResolutionUpscale": 1,
+      "enablePerRequestSync": true,
+      "enableNativeHEIF": true
+    },
+    "eeprom_wb_reference_4100k": {
+      "rGain": 1.700643,
+      "gGain": 1.0,
+      "bGain": 2.054097,
+      "colorTemp": 4100
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "target_device": {
+    "device_name": "OnePlus 13",
+    "soc_model": "Qualcomm Snapdragon 8 Elite (SM8750)",
+    "hexagon_npu_arch": "v79",
+    "qnn_htp_stub_library": "libQnnHtpV79Stub.so",
+    "qnn_system_library": "libQnnSystem.so",
+    "litert_active_bridge_library": "lib_x9u_s26u_isp_1.so"
+  },
+  "active_ai_model": {
+    "model_file": "detr_resnet101.tflite",
+    "source_archive": "detr_resnet101-tflite-float.zip (Drive ID: 10fEvwMBAibgetW0uNjCiKehqovpfbqmd)",
+    "runtime": "tflite (LiteRT Qualcomm Hexagon V79)",
+    "use_case": "DETR-ResNet101 Transformer Object Detection & Subject-Locked Autofocus + v56 Tele/Main/Macro ISP",
+    "metadata": {
+      "model_id": "detr_resnet101",
+      "model_name": "DETR-ResNet101",
+      "source_drive_file_id": "10fEvwMBAibgetW0uNjCiKehqovpfbqmd",
+      "source_archive": "detr_resnet101-tflite-float.zip",
+      "runtime": "tflite",
+      "precision": "float_and_htp_fp16_hybrid",
+      "tool_versions": {
+        "qairt": "2.50.0.260828221209"
+      },
+      "model_files": {
+        "detr_resnet101.tflite": {
+          "inputs": {
+            "image": {
+              "shape": [
+                1,
+                480,
+                480,
+                3
+              ],
+              "dtype": "float32",
+              "io_type": "image",
+              "value_range": [
+                0.0,
+                1.0
+              ]
+            }
+          },
+          "outputs": {
+            "boxes": {
+              "shape": [
+                1,
+                100,
+                4
+              ],
+              "dtype": "float32"
+            },
+            "scores": {
+              "shape": [
+                1,
+                100
+              ],
+              "dtype": "float32"
+            },
+            "class_idx": {
+              "shape": [
+                1,
+                100
+              ],
+              "dtype": "int32"
+            }
+          }
+        }
+      },
+      "use_case": "Object Detection & AI Subject-Tracking Autofocus"
+    }
+  }
+}

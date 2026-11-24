@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<QualcommCAMSSPipeline version="1.0" soc="SM8750_Spectra480">
+    <CSID testPatternGenerator="false" phyLanes="4" cphyMode="true" bpp="10,12,14"/>
+    <VFE dualVfeSync="true" rdiPaths="3" pixPath="IFE_BPS_IPE" ubwcCompression="true"/>
+    <ZoomRemosaic inSensorQCFA="true" lossless10x12x="true" polyphaseUpscaler="Spectra_IPE_8Tap"/>
+</QualcommCAMSSPipeline>

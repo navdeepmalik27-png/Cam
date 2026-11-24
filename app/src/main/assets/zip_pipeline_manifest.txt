@@ -1,0 +1,4 @@
+BASE_FOUNDATION: OptiCore OnePlus 13 v56 Main & Macro Tele-Processing + Strong Active AF
+INTEGRATED_DRIVE_MODEL: detr_resnet101-tflite-float.zip (DETR-ResNet101 Object Detection & AI Subject Autofocus)
+REMOVED_LEGACY_MODELS: text_enhance_yuv_v1.tflite, isr_idealo/rdn_rrdn_config.json, wenbihan_sota_denoise/twsc_tnrd_ghp_config.json
+QUALCOMM_NPU_BACKEND: Snapdragon 8 Elite (SM8750) Hexagon V79 HTP (libQnnSystem.so + libQnnHtpV79Stub.so + libLiteRtDispatch_Qualcomm.so + lib_x9u_s26u_isp_1.so)
